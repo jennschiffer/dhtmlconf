@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DHTMLConf</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="geo.css" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+    /*
+     * Style twaks
+     * --------------------------------------------------
+     */
+    body {
+      padding-top: 30px;
+    }
+    footer {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    /*
+     * Off Canvas
+     * --------------------------------------------------
+     */
+    @media screen and (max-width: 768px) {
+      .row-offcanvas {
+        position: relative;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+      }
+
+      .row-offcanvas-right
+      .sidebar-offcanvas {
+        right: -50%; /* 6 columns */
+      }
+
+      .row-offcanvas-left
+      .sidebar-offcanvas {
+        left: -50%; /* 6 columns */
+      }
+
+      .row-offcanvas-right.active {
+        right: 50%; /* 6 columns */
+      }
+
+      .row-offcanvas-left.active {
+        left: 50%; /* 6 columns */
+      }
+
+      .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 50%; /* 6 columns */
+      }
+    }
+    .jumbotron {
+      background: #000000 url('img/stars.gif') top left;
+    }
+    h2 {
+      font-size:30px;
+    }
+    </style>
+    <!-- Bootstrap core CSS -->
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1><marquee>DHTMLConf 2014!</marquee></h1>
+            <p>We're gonna conference like it's 1999.</p>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-6 col-lg-6">
+              <h2>Dreamweaver 1.0 Demo</h2>
+              <p>Members of the original Dreamweaver team will walk through a demo of the WYSIWYG that started it all..</p>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-6">
+              <h2>Time and <img src="img/spinningearth.gif"></img> Location</h2>
+              <p>Friday March 7th 2pm - 7pm at Adobe, of course :)</p>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-6">
+              <h2>Is this a joke?</h2>
+              <p><img src="img/hot.gif"></img> Yes, but it's also a real event that you can actually attend.</p>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-6">
+              <h2>JSFest</h2>
+              <p>This event is part of JSFest, a JavaScript Festival in March 2014 in San Francsico.</p>
+              <p><a class="btn btn-default" href="http://jsfest.com">JSFest &raquo;</a></p>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-6">
+              <h2>Tickets</h2>
+              <p>Coming Soon! "Register Interest" for JSFest to find out when they go on sale.</p>
+              <p><a class="btn btn-default" href="#">Ticketing &raquo;</a></p>
+            </div>
+          </div>
+          <center>
+            <!-- TRIPLE MC HAMMER -->
+            <img src="img/mchammer.gif">&nbsp;&nbsp;
+            <img src="img/mchammer.gif">&nbsp;&nbsp;
+            <img src="img/mchammer.gif">
+          </center>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="well sidebar-nav">
+            <ul class="nav">
+              <li>Webring</li>
+              <li><a href="http://jsfest.com"><img class="pull-left" style="margin-top: -3px" src="img/new.gif"></img>JSFest</a></li>
+              <li><a href="http://jsconf.com">JSConf</a></li>
+              <li><a href="http://www.nodeconf.com">NodeConf</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr/>
+
+      <table cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td>
+              <img src="img/ie_logo.gif">
+            </td>
+            <td>
+              <img src="img/ns_logo.gif">
+            </td>
+            <td>
+              <img src="img/noframes.gif">
+            </td>
+            <td>
+              <img src="img/notepad.gif">
+            </td>
+            <td>
+              <img src="img/counter2.gif">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <script>
+     $(document).ready(function() { $('[data-toggle=offcanvas]').click(function() { $('.row-offcanvas').toggleClass('active'); }); });
+    </script>
+  </body>
+</html>

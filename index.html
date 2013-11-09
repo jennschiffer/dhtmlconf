@@ -80,9 +80,18 @@
 
     <!-- Custom styles for this template -->
     <link href="offcanvas.css" rel="stylesheet">
-  </head>
+    <SCRIPT LANGUAGE="JavaScript" SRC="JSFX_Layer.js"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="JSFX_Mouse.js"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="JSFX_Fire.js"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript">
+    function JSFX_StartEffects()
+    {
+    	JSFX.Fire(40, 0);
+    }
+    </SCRIPT>
+  </HEAD>
 
-  <BODY>
+  <BODY onLoad="JSFX_StartEffects()">
 
     <DIV class="container">
 
@@ -98,7 +107,7 @@
           <DIV class="row">
             <DIV class="col-6 col-sm-6 col-lg-6">
               <h2>Dreamweaver 1.0 Demo</h2>
-              <p>Members of the original Dreamweaver team will walk through a demo of the WYSIWYG that started it all..</p>
+              <p>Members of the original Dreamweaver team will walk through a demo of the WYSIWYG that started it all.</p>
             </DIV>
             <DIV class="col-6 col-sm-6 col-lg-6">
               <h2>Time and <IMG border="0" SRC="img/spinningearth.gif"></img> Location</h2>

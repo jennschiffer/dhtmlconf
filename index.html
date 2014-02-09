@@ -75,6 +75,16 @@
     h2 {
       font-size:30px;
     }
+    .speakers {
+      transform: translateX(-1000px);
+      -webkit-transform: translateX(-1000px);
+      transition: 4s;
+      -webkit-transition: 4s;
+    }
+    .speakers.aria-compliance {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+    }
     </style>
     <!-- Bootstrap core CSS -->
 
@@ -88,10 +98,22 @@
     {
     	JSFX.Fire(40, 0);
     }
+
+    function importantSoftwareProgram() {
+      document.querySelector('.speakers').classList.add('aria-compliance');
+
+      (function turboTax() { setTimeout(function() {
+        var l = document.querySelector('.actual-speaker-list');
+        var c = l.children[Math.floor(l.children.length * Math.random())];
+        l.removeChild(c);
+        l.appendChild(c);
+        turboTax();
+      }, Math.random() * 5000) })();
+    }
     </SCRIPT>
   </HEAD>
 
-  <BODY onLoad="JSFX_StartEffects()">
+  <BODY onLoad="JSFX_StartEffects();importantSoftwareProgram();">
 
     <DIV class="container">
 
@@ -105,6 +127,16 @@
             <p>We're gonna conference like it's 1999.</p>
           </DIV>
           <DIV class="row">
+            <DIV class="col-6 col-sm-6 col-lg-6 speakers">
+              <h2>Speakers</h2>
+              <ul class="actual-speaker-list">
+                <li><a href="http://infrequently.org/">Alex Russell</a>
+                <li><a href="https://twitter.com/SlexAxton">Alex Sexton</a>
+                <li><a href="https://medium.com/@jennschiffer">Jenn Schiffer</a>
+                <li><a href="https://github.com/substack">Substack</a>
+                <li>and possibly more to be announced.
+              </ul>
+            </DIV>
             <DIV class="col-6 col-sm-6 col-lg-6">
               <h2>Dreamweaver 1.0 Demo</h2>
               <p>Members of the original Dreamweaver team will walk through a demo of the WYSIWYG that started it all.</p>
